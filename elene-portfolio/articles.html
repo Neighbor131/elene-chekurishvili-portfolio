@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Articles and writing by Elene Chekurishvili." />
+    <title>Articles | Elene Chekurishvili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./data/articles.js" defer></script>
+    <script src="./articles.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="./index.html" aria-label="Elene Chekurishvili home">
+        <span class="brand-bar brand-bar-top"></span>
+        <span class="brand-bar brand-bar-middle"></span>
+        <span class="brand-bar brand-bar-bottom"></span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="./works.html">Works</a>
+        <a href="./index.html#about">About</a>
+        <a href="./articles.html">Articles</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="home-hero" aria-labelledby="articles-title">
+        <h1 id="articles-title">Articles</h1>
+        <p>Writing, notes, and research around UX, AI workflows, product design, and digital craft.</p>
+      </section>
+
+      <section class="project-board" aria-label="Articles">
+        <div class="project-grid" id="article-grid"></div>
+        <p class="empty-state" id="articles-empty" hidden>No articles synced yet.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Elene Chekurishvili</p>
+      <nav aria-label="Connect links">
+        <a href="mailto:el.chekurishvili@gmail.com">Email</a>
+        <a href="https://medium.com/@elenech" target="_blank" rel="noopener">Medium</a>
+        <a href="https://www.wonderer613.art/#" target="_blank" rel="noopener">Wonderer613</a>
+      </nav>
+      <div class="kofi-widget" aria-label="Support on Ko-fi">
+        <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+        <script type="text/javascript">kofiwidget2.init("What about coffee?", "#000000", "A0A61Y715P");kofiwidget2.draw();</script>
+      </div>
+      <p>Built with Codex</p>
+    </footer>
+  </body>
+</html>

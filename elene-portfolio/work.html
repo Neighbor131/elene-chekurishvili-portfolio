@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Selected work by Elene Chekurishvili." />
+    <title>Work | Elene Chekurishvili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./projects.js" defer></script>
+    <script src="./work-detail.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="./index.html" aria-label="Elene Chekurishvili home">
+        <span class="brand-bar brand-bar-top"></span>
+        <span class="brand-bar brand-bar-middle"></span>
+        <span class="brand-bar brand-bar-bottom"></span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="./works.html">Works</a>
+        <a href="./index.html#about">About</a>
+        <a href="./articles.html">Articles</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top" class="work-page" data-work-page>
+      <section class="work-copy" aria-labelledby="work-title">
+        <p class="work-kicker" data-work-meta></p>
+        <h1 id="work-title" data-work-title></h1>
+        <p class="work-summary" data-work-summary></p>
+        <dl class="work-details">
+          <div>
+            <dt>Role</dt>
+            <dd data-work-role></dd>
+          </div>
+          <div>
+            <dt>Focus</dt>
+            <dd data-work-focus></dd>
+          </div>
+          <div>
+            <dt>Year</dt>
+            <dd data-work-year></dd>
+          </div>
+        </dl>
+        <a class="medium-link work-live-link" href="#" target="_blank" rel="noopener" hidden data-work-live-link>
+          <span>Visit live project</span>
+        </a>
+        <a class="medium-link work-back-link" href="./works.html">
+          <span>Back to Works</span>
+        </a>
+      </section>
+
+      <section class="work-media" aria-label="Project images" data-work-media></section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Elene Chekurishvili</p>
+      <nav aria-label="Connect links">
+        <a href="mailto:el.chekurishvili@gmail.com">Email</a>
+        <a href="https://medium.com/@elenech" target="_blank" rel="noopener">Medium</a>
+        <a href="https://www.wonderer613.art/#" target="_blank" rel="noopener">Wonderer613</a>
+      </nav>
+      <div class="kofi-widget" aria-label="Support on Ko-fi">
+        <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+        <script type="text/javascript">kofiwidget2.init("What about coffee?", "#000000", "A0A61Y715P");kofiwidget2.draw();</script>
+      </div>
+      <p>Built with Codex</p>
+    </footer>
+  </body>
+</html>

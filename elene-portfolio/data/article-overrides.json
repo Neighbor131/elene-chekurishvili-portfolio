@@ -1,0 +1,126 @@
+{
+  "4e82b53d4d37": {
+    "customCover": "./assets/article-covers/ai-act-timeline-product-teams.jpg",
+    "ratio": "2 / 1"
+  },
+  "fce26cbc885f": {
+    "customCover": "./assets/article-covers/anthropic-kiosk-agent-goes-rogue.jpg",
+    "ratio": "390 / 401"
+  },
+  "7c909f2db3db": {
+    "customCover": "./assets/article-covers/7-design-paradigms-human-ai-interfaces.jpg",
+    "ratio": "1489 / 802"
+  },
+  "137c54eccbac": {
+    "customCover": "./assets/article-covers/death-of-checkout-flow-agentic-commerce.jpg",
+    "ratio": "1714 / 2163"
+  },
+  "d475f346a0c8": {
+    "customCover": "./assets/article-covers/8-apps-websites-worth-paying-2025-product-designer.jpg",
+    "ratio": "3123 / 1519"
+  },
+  "95dc5d6025c5": {
+    "customCover": "./assets/article-covers/creative-labour-modern-age.jpg",
+    "ratio": "1714 / 2163"
+  },
+  "d1ef70bb7004": {
+    "customCover": "./assets/article-covers/what-i-wish-i-knew-everywhere-everything.jpg",
+    "ratio": "2019 / 1519"
+  },
+  "2c9356d8e795": {
+    "customCover": "./assets/article-covers/beyond-commands-prompt-engineering.jpg",
+    "ratio": "2250 / 2163"
+  },
+  "63f0325bbc0c": {
+    "customCover": "./assets/article-covers/creaties-generate-ui-first-impressions.jpg",
+    "ratio": "375 / 259"
+  },
+  "17c064233b57": {
+    "customCover": "./assets/article-covers/5-free-mockup-websites.jpg",
+    "ratio": "375 / 259",
+    "title": "5 Free Mockup Websites Every Designer Should Know About",
+    "slug": "5-free-mockup-websites-every-designer-should-know-about",
+    "excerpt": "A quick list of free mockup resources every designer can keep close for portfolio and presentation work."
+  },
+  "090de0fe1cb7": {
+    "customCover": "./assets/article-covers/why-skip-research-phase.svg",
+    "originalCover": "./assets/article-covers/why-skip-research-phase.svg",
+    "ratio": "16 / 9",
+    "title": "Why do we skip the research phase at all?",
+    "slug": "why-do-we-skip-the-research-phase-at-all",
+    "excerpt": "Small development teams often skip user research when timelines are tight and client requirements feel complete. Here is why that hurts products, and how to make research practical.",
+    "manualContentPath": "./data/manual-articles/why-do-we-skip-the-research-phase-at-all.html"
+  },
+  "07a62530a7af": {
+    "customCover": "./assets/article-covers/tune-testing-method-templates-lyssna.jpg",
+    "ratio": "2007 / 2005"
+  },
+  "f4fd2eb1983c": {
+    "customCover": "./assets/article-covers/introducing-sora-text-to-video.jpg",
+    "ratio": "2007 / 1392"
+  },
+  "427addf842a9": {
+    "customCover": "./assets/article-covers/designing-tonal-palettes-figma-accessibility.jpg",
+    "ratio": "2761 / 1392"
+  },
+  "769e3464ffd5": {
+    "customCover": "./assets/article-covers/gemini-explained-models-evaluation.jpg",
+    "ratio": "3198 / 2005"
+  },
+  "8079d313846f": {
+    "customCover": "./assets/article-covers/7-new-apps-websites-ux-ui-designer.jpg",
+    "ratio": "2031 / 2622"
+  },
+  "ca3b309e12a2": {
+    "customCover": "./assets/article-covers/psychology-of-waiting-skeletons.jpg",
+    "ratio": "2031 / 1242"
+  },
+  "d19a71e197de": {
+    "customCover": "./assets/article-covers/10-figma-plugins-ux-ui-designer.jpg",
+    "ratio": "2031 / 1621"
+  },
+  "fbcfa7c43e30": {
+    "customCover": "./assets/article-covers/wcag-2-2-guidelines.jpg",
+    "ratio": "2740 / 1621"
+  },
+  "d2f927d5d7f7": {
+    "customCover": "./assets/article-covers/one-year-progress-dall-e-2.jpg",
+    "ratio": "1702 / 2099"
+  },
+  "208b14b47383": {
+    "customCover": "./assets/article-covers/ux-case-study-bank-card-spent-history.jpg",
+    "ratio": "1702 / 2099"
+  },
+  "aeb5814fe2b4": {
+    "customCover": "./assets/article-covers/ux-case-study-carbon-footprint.jpg",
+    "ratio": "2258 / 2099"
+  },
+  "2b664c961ada": {
+    "customCover": "./assets/article-covers/get-creative-with-chatgpt.jpg",
+    "ratio": "2258 / 1492"
+  },
+  "232750cfb722": {
+    "customCover": "./assets/article-covers/dall-e-2-ode-post-impressionism.jpg",
+    "ratio": "2201 / 2527"
+  },
+  "3176d0c9811e": {
+    "customCover": "./assets/article-covers/first-thoughts-dct-net-portrait-stylization.jpg",
+    "ratio": "2501 / 1642"
+  },
+  "1d871a57660b": {
+    "customCover": "./assets/article-covers/dall-e-2-editing-realistic-faces.jpg",
+    "ratio": "1749 / 2031"
+  },
+  "766babe74027": {
+    "customCover": "./assets/article-covers/training-dall-e-2-art-styles-prompts.jpg",
+    "ratio": "2702 / 1354"
+  },
+  "https://medium.com/@elenech/dall-e-2-vs-pissaro-dicksee-or-of-assumptions-biases-and-filters-e3306b7e5e2": {
+    "customCover": "./assets/article-covers/dall-e-2-vs-pissaro-dicksee-assumptions-biases-filters.jpg",
+    "ratio": "2399 / 1992"
+  },
+  "d099b445a47e": {
+    "customCover": "./assets/article-covers/tour-operator-website-landing-page-design.jpg",
+    "ratio": "1945 / 2436"
+  }
+}

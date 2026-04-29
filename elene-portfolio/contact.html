@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Elene Chekurishvili for UX/UI design, eCommerce design, email marketing design, AI workflow consulting, and product design work."
+    />
+    <title>Contact | Elene Chekurishvili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./contact-form.js" defer></script>
+  </head>
+  <body class="contact-page">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="./index.html" aria-label="Elene Chekurishvili home">
+        <span class="brand-bar brand-bar-top"></span>
+        <span class="brand-bar brand-bar-middle"></span>
+        <span class="brand-bar brand-bar-bottom"></span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="./works.html">Works</a>
+        <a href="./index.html#about">About</a>
+        <a href="./articles.html">Articles</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="contact-shell" aria-labelledby="contact-title">
+        <h1 class="visually-hidden" id="contact-title">Contact Elene Chekurishvili</h1>
+        <section class="chat-contact" aria-label="Conversational contact form">
+          <form
+            class="chat-form"
+            id="contact-form"
+            name="contact"
+            method="post"
+            data-netlify="true"
+            netlify-honeypot="company"
+            novalidate
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="bot-field" hidden>
+              <label>Company <input name="company" tabindex="-1" autocomplete="off" /></label>
+            </p>
+
+            <div class="chat-thread" id="chat-thread" aria-live="polite">
+              <div class="chat-step is-visible" id="email-step">
+                <div class="composer-row email-row">
+                  <label class="visually-hidden" for="email">Email</label>
+                  <div class="composer-input-wrap">
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      placeholder="Your email"
+                      autocomplete="email"
+                      aria-describedby="email-error"
+                    />
+                  </div>
+                </div>
+                <p class="form-error" id="email-error" aria-live="polite"></p>
+              </div>
+
+              <div class="chat-step is-visible" id="message-step">
+                <div class="composer-row">
+                  <label class="visually-hidden" for="message">Message</label>
+                  <div class="composer-input-wrap">
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="1"
+                      placeholder="Write a quick note about what you need help with."
+                      autocomplete="off"
+                      aria-describedby="message-error"
+                    ></textarea>
+                  </div>
+                  <div class="composer-toolbar" aria-label="Message actions">
+                    <span aria-hidden="true"></span>
+                    <button class="composer-submit" type="submit" id="message-next" aria-label="Send message" disabled>
+                      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path d="M12 19V5m0 0-6 6m6-6 6 6" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p class="form-error" id="message-error" aria-live="polite"></p>
+              </div>
+
+              <p class="form-error" id="submit-error" aria-live="polite"></p>
+              <p class="form-status" id="contact-success" role="status" hidden>
+                Message sent. I’ll read through it and reply with the next clearest step.
+              </p>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Elene Chekurishvili</p>
+      <nav aria-label="Connect links">
+        <a href="mailto:el.chekurishvili@gmail.com">Email</a>
+        <a href="https://medium.com/@elenech" target="_blank" rel="noopener">Medium</a>
+        <a href="https://www.wonderer613.art/#" target="_blank" rel="noopener">Wonderer613</a>
+      </nav>
+      <div class="kofi-widget" aria-label="Support on Ko-fi">
+        <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+        <script type="text/javascript">kofiwidget2.init("What about coffee?", "#000000", "A0A61Y715P");kofiwidget2.draw();</script>
+      </div>
+      <p>Built with Codex</p>
+    </footer>
+  </body>
+</html>

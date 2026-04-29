@@ -1,0 +1,76 @@
+{
+  "articles": [
+    {
+      "url": "https://medium.com/design-bootcamp/5-free-mockup-websites-every-designer-should-know-about-17c064233b57"
+    },
+    {
+      "url": "https://medium.com/design-bootcamp/tune-why-do-we-skip-the-research-phase-at-all-090de0fe1cb7"
+    },
+    {
+      "url": "https://medium.com/design-bootcamp/tune-testing-method-templates-with-lyssna-07a62530a7af"
+    },
+    {
+      "url": "https://medium.com/@elenech/introducing-sora-creating-video-from-text-openais-new-model-f4fd2eb1983c"
+    },
+    {
+      "url": "https://medium.com/design-bootcamp/designing-tonal-palettes-in-figma-for-improved-accessibility-effective-plugins-tools-to-use-427addf842a9"
+    },
+    {
+      "url": "https://medium.com/design-bootcamp/7-new-apps-websites-to-explore-as-ux-ui-designer-8079d313846f"
+    },
+    {
+      "url": "https://medium.com/@elenech/gemini-explained-the-models-capabilities-comparisons-with-gpt-4-and-limitations-769e3464ffd5"
+    },
+    {
+      "url": "https://medium.com/design-bootcamp/5-browser-extensions-i-still-use-every-day-as-a-ux-ui-designer-e0c5c7db6277"
+    },
+    {
+      "url": "https://medium.com/@elenech/the-psychology-of-waiting-skeletons-ca3b309e12a2"
+    },
+    {
+      "url": "https://medium.com/@elenech/10-figma-plugins-i-use-every-day-as-a-ux-ui-designer-d19a71e197de"
+    },
+    {
+      "url": "https://medium.com/design-bootcamp/wcag-2-2-guidelines-what-we-know-so-far-new-features-with-examples-fbcfa7c43e30"
+    },
+    {
+      "url": "https://medium.com/@EleneeChek/ux-case-study-design-a-card-spent-history-for-a-bank-app-208b14b47383"
+    },
+    {
+      "url": "https://medium.com/@elenech/ux-case-study-carbon-footprint-tracking-feature-aeb5814fe2b4"
+    },
+    {
+      "url": "https://medium.com/@elenech/get-creative-with-chatgpt-openais-newest-powerful-language-model-2b664c961ada"
+    },
+    {
+      "url": "https://medium.com/@elenech/one-year-of-progress-dall-e-2-experimental-model-d2f927d5d7f7"
+    },
+    {
+      "url": "https://medium.com/@elenech/side-by-side-comparison-of-stable-diffusion-1-5-test-update-of-31-08-2022-and-dall-e-2-c94ae41a4240"
+    },
+    {
+      "url": "https://medium.com/@elenech/dall-e-2-ode-to-post-impressionism-a-quick-prompt-modification-and-post-dalle2-edits-232750cfb722"
+    },
+    {
+      "url": "https://medium.com/@elenech/first-thoughts-about-dct-net-domain-calibrated-translation-for-portrait-stylization-3176d0c9811e"
+    },
+    {
+      "url": "https://medium.com/@elenech/dall-e-2-editing-issue-of-generating-realistic-faces-1d871a57660b"
+    },
+    {
+      "url": "https://medium.com/better-programming/training-dall-e-2-of-generating-art-styles-photorealistic-images-and-detailed-prompts-766babe74027"
+    },
+    {
+      "url": "https://medium.com/@elenech/dall-e-2-vs-pissaro-dicksee-or-of-assumptions-biases-and-filters-e3306b7e5e2",
+      "title": "DALL·E 2 vs PISSaro & DICKsee or, of assumptions, biases and filters",
+      "publishedAt": "2022-07-06T14:05:16.000Z",
+      "excerpt": "Early notes on DALL·E 2 assumptions, visual filtering, prompt wording, and the friction between creative intent and safety systems."
+    },
+    {
+      "url": "https://medium.com/@elenech/tour-operator-website-landing-page-design-d099b445a47e",
+      "title": "Tour Operator Website: Landing Page Design",
+      "publishedAt": "2022-02-17T09:14:48.000Z",
+      "excerpt": "A landing page design case for a tour operator website, structured around travel packages, testimonials, useful visitor resources, and enquiry flows."
+    }
+  ]
+}

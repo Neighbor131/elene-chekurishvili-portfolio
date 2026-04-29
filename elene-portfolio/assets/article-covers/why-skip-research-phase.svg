@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1152" role="img" aria-labelledby="title desc">
+  <title id="title">Why do we skip the research phase at all?</title>
+  <desc id="desc">White cover with bold black headline, handwritten UX designer note, and Lyssna wordmark.</desc>
+  <rect width="2048" height="1152" fill="#fbfbfa"/>
+  <text x="1194" y="218" fill="#f3bd00" font-family="Comic Sans MS, Chalkboard SE, cursive" font-size="112" font-weight="700" transform="rotate(8 1194 218)">UX designer</text>
+  <g fill="#0b0b0b" font-family="Georgia, 'Times New Roman', serif" font-weight="900" text-anchor="middle">
+    <text x="1024" y="430" font-size="126">Why Do We Skip the</text>
+    <text x="1024" y="584" font-size="126">Research Phase at All?</text>
+  </g>
+  <text x="420" y="810" fill="#0b9a92" font-family="Georgia, 'Times New Roman', serif" font-size="156" font-weight="900">Lyssna</text>
+  <path d="M860 796c32-62 58-54 45 22-11 67 39 59 54-5 18-74 63-63 47 14-12 58 34 65 50 3 19-75 57-58 38 11" fill="none" stroke="#0b9a92" stroke-width="10" stroke-linecap="round"/>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="900">
+    <text x="430" y="1002" fill="#f3bd00">T</text>
+    <text x="482" y="1002" fill="#0b0b0b">uesday's</text>
+    <text x="802" y="1002" fill="#9a63ff">U</text>
+    <text x="858" y="1002" fill="#72a3ff">X</text>
+    <text x="958" y="1002" fill="#0b0b0b">New</text>
+    <text x="1154" y="1002" fill="#f05a28">E</text>
+    <text x="1210" y="1002" fill="#0b0b0b">ssentials</text>
+  </g>
+</svg>

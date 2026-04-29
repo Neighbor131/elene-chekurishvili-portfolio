@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="For those who still don’t know what DALL·E 2 is, it’s a new AI system from OpenAI that can create art and realistic images from text prompt given in natural language. Pretty impres" />
+    <title>DALL·E 2 vs PISSaro &amp; DICKsee or, of assumptions, biases and filters | Elene Chekurishvili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="../index.html" aria-label="Elene Chekurishvili home">
+        <span class="brand-bar brand-bar-top"></span>
+        <span class="brand-bar brand-bar-middle"></span>
+        <span class="brand-bar brand-bar-bottom"></span>
+      </a>
+      <nav class="nav-links" aria-label="Site">
+        <a href="../works.html">Works</a>
+        <a href="../index.html#about">About</a>
+        <a href="../articles.html">Articles</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <article class="article-page">
+        <header class="article-header">
+          <p class="article-meta">July 6, 2022 · Elenee Ch</p>
+          <h1>DALL·E 2 vs PISSaro &amp; DICKsee or, of assumptions, biases and filters</h1>
+          <a class="medium-link" href="https://medium.com/@elenech/dall-e-2-vs-pissaro-dicksee-or-of-assumptions-biases-and-filters-e3306b7e5e2" target="_blank" rel="noopener">
+            <span>Read on Medium</span>
+            <i class="hgi-stroke hgi-arrow-up-right-01 medium-link-icon" aria-hidden="true"></i>
+          </a>
+        </header>
+        <figure class="article-cover"><img src="https://miro.medium.com/v2/resize:fit:700/1*nuwR9yZm11D1QWTrBf-WzQ.png" alt="" /></figure>
+        <div class="article-rich-text">
+          <p>For those who still don’t know what DALL·E 2 is, it’s a new AI system from OpenAI that can create art and realistic images from text prompt given in natural language. Pretty impressive I know! Since their filtering approach is still flawed, their main component of the mitigation strategy so far has been system access limitation to only the trusted users, with whom OpenAI team directly reinforce the importance of following the use case guidelines. After a month of being on the whitelist, I was invited to have an early access and you can imagine my excitement and joy to finally have my hands on it.</p><p>I’ve been experimenting with the system for a week now and while it was super insightful, there still were some problems with filtering that I wish were taken into account. Since we‘ve been asked to use it according to the <a target="_blank" rel="noopener" href="https://labs.openai.com/policies/content-policy"><strong>content policy</strong></a> and report any kind of any suspected violation of the rules directly to the team, we aren’t allowed to generate anything other than G-rated or potentially harmful content.</p><p>Since I have only limited knowledge of how the system and filtering works, I asked my brother-in-law, Tornike, who studies AI to give me some tips how to “talk” with the system to generate better results and find the weaknesses within it.</p><p>Here are some of what we’ve noticed so far:</p><p>1.   <strong>When it comes to generate a photo in a specific art style, you will get a better result if you modify your prompt similar to the official title of the original piece.</strong>e.g. instead of finishing your query in “ X Y style” use more formal query, similar to the image titles from W<a target="_blank" rel="noopener" href="https://www.wikiart.org/">ikiart</a> or <a target="_blank" rel="noopener" href="https://www.wikipedia.org/">Wikipedia</a>, since it’s more likely that the system was trained on those databases.</p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:2194/1*CffNsP1yw_AX9wV_6eFUEw.png" alt="Image 16" /></p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:1280/1*QTrlHv3uaKh7Bbx6v_luPw.jpeg" alt="Image 17" /></p><p>Left: Naruto And Gaara feeding ducks, in Niko Pirosmani style, Right: Fisherman Naruto in a red shirt, Niko Pirosmani. Original title: მეთევზე, 1908, primitivism, portrait, oil cloth, Tbilisi, Georgia.</p><p>The second prompt above made it easier for the system to generate what I initially had in my mind.</p><p><strong>2. Default and assumption.</strong></p><p>On their Github we read _“The default behavior of the_<strong>_DALL·E 2_</strong>_Preview produces images that tend to overrepresent people who are White-passing and Western concepts generally.”_[<strong>_[1]_</strong>](https://github.com/openai/dalle-2-preview/blob/main/system-card.md#restrictions)In the prompt below, the system generated all males and all of them of asian origin.</p><figure><img src="https://miro.medium.com/v2/resize:fit:700/1*sW3zNE88Nj5AznOAwMCdMQ.png" alt="Image 18" /></figure><p><strong>3. If you’re fan of</strong><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Camille_Pissarro"><strong>Pissaro’s</strong></a><strong>work, I have a bad news for you.</strong>So I’ve been in love with Pissaro’s work since forever and imagine my disappointment when I got this message:</p><figure><img src="https://miro.medium.com/v2/resize:fit:585/1*UY6L5m4qGnGIgowEcujy2Q.png" alt="Image 19" /></figure><p>Obviously I went back to the content policy to try and find what did I do wrong, since there was nothing violating in my initial prompt at one glance. In the content policy we read: _“_<strong>_Do not attempt to create, upload, or share images that are not G-rated or that could cause harm._</strong></p><ul><li><strong>_Shocking:_</strong>_bodily fluids, obscene gestures, or other profane subjects that may shock or disgust.”_[<strong>_[2]_</strong>](https://labs.openai.com/policies/content-policy)</li></ul><p>When I asked Tornike if the combination of letters in the painter’s surname (Piss) could be the reason of the error, he mentioned something about pre-filtering the database. So I went back and checked the Github to see if they addressed this issue about the explicit content and how can I avoid policy violation and still generate my initial request.</p><p>_“Despite the pre-training filtering, DALL·E 2 maintains the ability to generate content that features or suggests any of the following: nudity/sexual content, hate, or violence/harm. We refer to these categories of content using the shorthand “explicit” in this document, in the interest of brevity. Whether something is explicit depends on context. Different individuals and groups hold different views on what constitutes, for example, hate speech (_<a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S0306457321001333">_Kocoń et al., 2021_</a>_).”_[<strong>_[3]_</strong>](https://github.com/openai/dalle-2-preview/blob/main/system-card.md#restrictions)</p><p>To check if my assumption was correct, I tried to write prompts that included homonyms. I tried to generate photos in <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Frank_Dicksee">Dicksee</a> style, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Moby-Dick">Moby Dick</a>… but instead of filtering by context, it gave me the same error.</p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:2167/1*unO9ZCPMN-PZYNh-vUwvKw.png" alt="Image 20" /></p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:2167/1*i4tUqK1-nP3K1lHbp0kMqA.png" alt="Image 21" /></p><p>Left: A painting of Moby Dick whale in the pink ocean, yellow background, sun setting, impressionism, Right: A painting of a big blue whale in the pink ocean, yellow background, sun setting, impressionism</p><p>In order to generate what I wanted initially, I had to follow the manual that suggested using <strong>“Visual synonyms”</strong>_(referring to the prompts for things that are visually similar to objects or concepts that are filtered, e.g. ketchup for blood. While the pre-training filters do appear to have stunted the system’s ability to generate explicitly harmful content in response to requests for that content, it is still possible to describe the desired content visually and get similar results. To effectively mitigate these we would need to train prompt classifiers conditioned on the content they lead to as well as explicit language included in the prompt._[<strong>_[4]_</strong>](https://github.com/openai/dalle-2-preview/blob/main/system-card.md#restrictions)_)._</p><p>As a notable mention, I also tried to request prompts including out traditional Georgian themes, I wasn’t surprised that some of the visuals didn’t match my text prompts, as if the system didn’t “know” what I was asking for or what I meant and gave me a very vague, general visuals.</p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:2167/1*q3Zdk3q5kyekJ96q83Iy9g.png" alt="Image 22" /></p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:2167/1*p2YvFHC40BmzeXMW9dFUCQ.png" alt="Image 23" /></p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:2167/1*Xy72cZ0yRk4LNP-cOVMJYw.png" alt="Image 24" /></p><p>Press enter or click to view image in full size<img src="https://miro.medium.com/v2/resize:fit:2167/1*392n86t3BO97mlJO2iARfQ.png" alt="Image 25" /></p><p>The right prompt above was a bit tricky, “King” triggered the assumption that I was looking for a male. while it caught the overall idea about christianity and church and Georgian outfit (triggers: Georgia, church) it still was flawed.</p><p>I am not sure how they will address these issues, but so far experimenting on <strong>DALL·E 2</strong> has been the main highlight of the past few weeks. I hope they will invite more artists to try and test the system.</p>
+        </div>
+        <a class="medium-link article-end-link" href="https://medium.com/@elenech/dall-e-2-vs-pissaro-dicksee-or-of-assumptions-biases-and-filters-e3306b7e5e2" target="_blank" rel="noopener">
+          <span>Read on Medium</span>
+          <i class="hgi-stroke hgi-arrow-up-right-01 medium-link-icon" aria-hidden="true"></i>
+        </a>
+      </article>
+    </main>
+
+    <div class="reading-progress" data-reading-progress role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+      <span class="reading-progress-value" data-reading-progress-value>0%</span>
+      <div class="reading-progress-control" aria-hidden="true">
+        <svg class="reading-progress-ring" viewBox="0 0 48 48" role="presentation">
+          <circle class="reading-progress-ring-track" cx="24" cy="24" r="18" stroke="currentColor" stroke-width="3" fill="none"></circle>
+          <circle class="reading-progress-ring-meter" data-reading-progress-circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>© 2026 Elene Chekurishvili</p>
+      <nav aria-label="Connect links">
+        <a href="mailto:el.chekurishvili@gmail.com">Email</a>
+        <a href="https://medium.com/@elenech" target="_blank" rel="noopener">Medium</a>
+        <a href="https://www.wonderer613.art/#" target="_blank" rel="noopener">Wonderer613</a>
+      </nav>
+      <div class="kofi-widget" aria-label="Support on Ko-fi">
+        <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+        <script type="text/javascript">kofiwidget2.init("What about coffee?", "#000000", "A0A61Y715P");kofiwidget2.draw();</script>
+      </div>
+      <p>Built with Codex</p>
+    </footer>
+    <script src="../article-toc.js"></script>
+    <script src="../article-progress.js"></script>
+  </body>
+</html>
