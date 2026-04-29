@@ -1,6 +1,12 @@
 [build]
   publish = "."
 
+[images]
+  remote_images = [
+    "https://cdn-images-1\\.medium\\.com/.*",
+    "https://miro\\.medium\\.com/.*"
+  ]
+
 [[headers]]
   for = "/*"
   [headers.values]

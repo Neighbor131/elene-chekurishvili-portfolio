@@ -727,10 +727,18 @@ function createProjectCard(project, index) {
   }
 
   const image = document.createElement("img");
-  image.src = project.cover;
+  PortfolioImages.apply(image, project.cover, {
+    width: card.classList.contains("is-slot-double") ? 1120 : 680,
+    widths: card.classList.contains("is-slot-double") ? [680, 960, 1120, 1440] : [420, 560, 680, 920],
+    sizes: card.classList.contains("is-slot-double")
+      ? "(min-width: 900px) 48vw, 100vw"
+      : "(min-width: 900px) 24vw, 100vw",
+    quality: 72,
+  });
   image.alt = "";
-  image.loading = "lazy";
+  image.loading = index < 4 ? "eager" : "lazy";
   image.decoding = "async";
+  image.fetchPriority = index < 2 ? "high" : "auto";
 
   const title = document.createElement("h2");
   title.textContent = project.title;

@@ -60,7 +60,12 @@ function renderWorkPage(project) {
       }
 
       const img = document.createElement("img");
-      img.src = image.src;
+      PortfolioImages.apply(img, image.src, {
+        width: 1400,
+        widths: [720, 960, 1200, 1400, 1800],
+        sizes: "(min-width: 900px) 58vw, 100vw",
+        quality: 76,
+      });
       img.alt = image.alt || `${project.title} ${image.label}`;
       img.loading = "lazy";
       img.decoding = "async";

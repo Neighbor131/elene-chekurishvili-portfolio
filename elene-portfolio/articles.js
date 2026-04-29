@@ -20,10 +20,16 @@ function createArticleCard(article, index) {
 
   if (hasUsableCover(article.cover)) {
     const image = document.createElement("img");
-    image.src = article.cover;
+    PortfolioImages.apply(image, article.cover, {
+      width: 680,
+      widths: [420, 560, 680, 920],
+      sizes: "(min-width: 900px) 24vw, 100vw",
+      quality: 72,
+    });
     image.alt = "";
-    image.loading = index < 6 ? "eager" : "lazy";
+    image.loading = index < 4 ? "eager" : "lazy";
     image.decoding = "async";
+    image.fetchPriority = index < 2 ? "high" : "auto";
     figure.append(image);
   } else {
     figure.classList.add("article-cover-fallback");
