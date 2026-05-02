@@ -14,17 +14,20 @@ function renderWorkPage(project) {
   const title = document.querySelector("[data-work-title]");
   const meta = document.querySelector("[data-work-meta]");
   const summary = document.querySelector("[data-work-summary]");
+  const links = document.querySelector("[data-work-links]");
   const body = document.querySelector("[data-work-body]");
   const role = document.querySelector("[data-work-role]");
   const focus = document.querySelector("[data-work-focus]");
   const year = document.querySelector("[data-work-year]");
   const media = document.querySelector("[data-work-media]");
   const liveLink = document.querySelector("[data-work-live-link]");
+  const liveLinkLabel = liveLink.querySelector("span");
 
   document.title = `${project.title} | Elene Chekurishvili`;
   title.textContent = project.title;
   meta.textContent = [project.type, project.year].filter(Boolean).join(" · ");
   summary.textContent = project.summary;
+  renderWorkLinks(links, project.links);
   body.classList.toggle("is-rich", Boolean(project.bodyMarkdown));
   if (project.bodyMarkdown) {
     renderWorkMarkdown(body, project.bodyMarkdown);
@@ -42,6 +45,7 @@ function renderWorkPage(project) {
 
   if (project.liveUrl) {
     liveLink.href = project.liveUrl;
+    liveLinkLabel.textContent = project.liveLabel || "Visit live project";
     liveLink.hidden = false;
   } else {
     liveLink.hidden = true;
@@ -89,6 +93,27 @@ function renderWorkPage(project) {
       return figure;
     }),
   );
+}
+
+function renderWorkLinks(container, links = []) {
+  if (!links.length) {
+    container.replaceChildren();
+    container.hidden = true;
+    return;
+  }
+
+  container.replaceChildren(
+    ...links.map((link) => {
+      const anchor = document.createElement("a");
+      anchor.className = "medium-link";
+      anchor.href = link.href;
+      anchor.target = "_blank";
+      anchor.rel = "noopener";
+      anchor.textContent = link.label;
+      return anchor;
+    }),
+  );
+  container.hidden = false;
 }
 
 function renderWorkMarkdown(container, markdown) {

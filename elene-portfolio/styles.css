@@ -290,6 +290,14 @@ h2 {
   max-width: 420px;
 }
 
+.work-links {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  margin-top: 28px;
+}
+
 .work-body {
   color: var(--muted);
   line-height: 1.45;

@@ -1,5 +1,63 @@
 const projects = [
   {
+    title: "Design System: Ubani",
+    cover: "./assets/ubani-design-system/ubani-banner.jpg",
+    href: "./work.html?project=ubani-design-system",
+    ratio: "1966 / 2493",
+    type: "Design system and flow showcase",
+    year: "2026",
+    focus: "Semantic tokens, component library, accessibility-first styling, developer-ready documentation, product journey validation",
+    summary: "A consistent, accessible, and scalable product foundation for neighborhood social experiences, paired with an interactive flow showcase that demonstrates the system inside real product journeys.",
+    links: [
+      {
+        label: "Open the design system",
+        href: "https://y-gilt-nine-99.vercel.app/ubani-design-system.html",
+      },
+      {
+        label: "View flow showcase",
+        href: "https://y-gilt-nine-99.vercel.app/ubani-app-showcase.html",
+      },
+    ],
+    bodyText: `Includes consistent, accessible, and scalable product foundation across neighborhood social experiences.
+
+It includes:
+
+a semantic token architecture (color, type, spacing, radius, elevation, motion),
+a component library with state coverage and usage rules,
+accessibility-first styling (AA/AAA-aware contrast mappings),
+and developer-ready documentation for implementation consistency across web and mobile.
+The goal was to make design decisions reusable, measurable, and production-ready rather than screen-by-screen.
+
+Flow Showcase
+Built an interactive Ubani Flow Showcase to demonstrate how the system performs in real product journeys, not just static components.
+
+It covers:
+
+end-to-end onboarding,
+feed, errands, marketplace, messaging, and moderation flows,
+UX hardening scenarios (emergency escalation, privacy controls, account recovery, report status, offline retry),
+plus platform preview modes (iOS and Android).
+The goal was to prove UX coherence across critical journeys, validate trust/safety patterns, and communicate product behavior clearly to design, product, and engineering stakeholders.`,
+    images: [
+      {
+        src: "./assets/ubani-design-system/ubani-banner.jpg",
+        label: "Ubani design system banner",
+      },
+      {
+        src: "./assets/ubani-design-system/ubani-overview-principles.png",
+        label: "Overview and design principles inside the Ubani design system",
+      },
+      {
+        src: "./assets/ubani-design-system/ubani-button-avatar-components.png",
+        label: "Button and avatar component documentation",
+      },
+      {
+        src: "./assets/ubani-design-system/ubani-badge-form-components.png",
+        label: "Badge and form input component documentation",
+      },
+    ],
+  },
+  {
     title: "From A/B Tests to a Scalable Design System: How a ±200% Conversion Lift Exposed the Need for Better UX Infrastructure",
     cover: "./assets/company-a-design-system/company-a-design-system-cover.jpg",
     href: "./work.html?project=company-a-design-system",
@@ -220,6 +278,136 @@ The result is a website foundation that is easier to improve, easier to maintain
       {
         src: "./assets/company-a-design-system/company-a-design-system-cover.jpg",
         label: "From A/B tests to a scalable design system cover",
+      },
+    ],
+  },
+  {
+    title: "Custom GPT: Prompt Crafter",
+    cover: "./assets/prompt-crafter/prompt-crafter-cover.jpg",
+    href: "./work.html?project=prompt-crafter",
+    ratio: "2611 / 1630",
+    type: "Retrieval-driven visual prompt agent",
+    year: "2026",
+    focus: "Image purpose, viewer context, lens psychology, framing, lighting, depth of field, environmental storytelling, realistic subject behavior",
+    summary: "Prompt Crafter is a retrieval-driven visual prompt agent for creators, founders, designers, and marketers who need AI-generated images that feel intentional rather than random. It interprets the image's purpose, viewer context, environment, and subject behavior, then turns those inputs into a polished prompt grounded in real photographic practice.",
+    liveUrl: "https://ko-fi.com/s/2788463577",
+    liveLabel: "Buy Prompt Crafter",
+    images: [
+      {
+        src: "./assets/prompt-crafter/prompt-crafter-cover.jpg",
+        label: "Prompt Crafter custom GPT cover",
+      },
+      {
+        src: "./assets/prompt-crafter/campus-reading-scene.png",
+        label: "Campus lifestyle scene with lens psychology and natural behavior",
+      },
+      {
+        src: "./assets/prompt-crafter/courtyard-study-scene.png",
+        label: "Editorial study scene shaped by foreground depth and environmental storytelling",
+      },
+      {
+        src: "./assets/prompt-crafter/bookstore-cafe-scene.png",
+        label: "Bookstore cafe scene with believable lighting, context, and imperfect human detail",
+      },
+    ],
+  },
+  {
+    title: "Custom GPT: Prompt Architect",
+    cover: "./assets/prompt-architect/prompt-architect-cover.jpg",
+    href: "./work.html?project=prompt-architect",
+    ratio: "1966 / 2493",
+    type: "Image-generation prompt strategist",
+    year: "2026",
+    focus: "Visual prompt structure, subject clarity, composition, lighting, materials, mood, color, constraints, reusable templates, refinement instructions",
+    summary: "Prompt Architect turns vague visual ideas into precise image-generation prompts that actually behave. It clarifies the subject, composition, lighting, materials, mood, color, and constraints so the model knows what to prioritize and what to avoid, without generic cinematic fluff.",
+    liveUrl: "https://ko-fi.com/s/0979d1fa79",
+    liveLabel: "Buy Prompt Architect",
+    images: [
+      {
+        src: "./assets/prompt-architect/prompt-architect-cover.jpg",
+        label: "Prompt Architect custom GPT cover",
+      },
+      {
+        src: "./assets/prompt-architect/bad-good-prompt-comparison.png",
+        label: "Bad prompt and refined prompt comparison",
+      },
+      {
+        src: "./assets/prompt-architect/prompt-architect-workflow.png",
+        label: "Prompt Architect workflow and visual logic system",
+      },
+      {
+        src: "./assets/prompt-architect/modern-house-exterior.png",
+        label: "Refined architectural prompt output with controlled light and composition",
+      },
+      {
+        src: "./assets/prompt-architect/park-billboard-scene.png",
+        label: "Realistic editorial scene shaped by subject, setting, and constraints",
+      },
+      {
+        src: "./assets/prompt-architect/park-bench-billboard-scene.png",
+        label: "Environment variation with clearer camera distance and story context",
+      },
+      {
+        src: "./assets/prompt-architect/kitchen-editorial-scene.png",
+        label: "Natural interior scene with mood, materials, and lighting direction",
+      },
+      {
+        src: "./assets/prompt-architect/fitness-class-scene.png",
+        label: "Action-focused realistic scene with foreground depth and group composition",
+      },
+      {
+        src: "./assets/prompt-architect/park-strollers-scene.png",
+        label: "Documentary-style scene prompt with gesture and framing control",
+      },
+      {
+        src: "./assets/prompt-architect/metro-platform-scene.png",
+        label: "Urban scene with perspective, atmosphere, and practical lighting",
+      },
+    ],
+  },
+  {
+    title: "Custom GPT: Scene Creator",
+    cover: "./assets/scene-creator/scene-creator-cover.jpg",
+    href: "./work.html?project=scene-creator",
+    ratio: "1904 / 1661",
+    type: "AI filmmaking and visual-generation strategist",
+    year: "2026",
+    focus: "Higgsfield-style workflows, cinematic prompt strategy, character and brand consistency, scene direction, image and video generation planning",
+    summary: "Scene Creator is a practical AI filmmaking and visual-generation strategist built for Higgsfield-style workflows. It helps creators figure out what they are actually trying to make, choose the right workflow, and turn loose ideas into production directions for images, videos, edits, continuations, ads, character swaps, motion graphics, and cinematic scenes.",
+    liveUrl: "https://ko-fi.com/s/03681d6666",
+    liveLabel: "Buy Scene Creator",
+    images: [
+      {
+        src: "./assets/scene-creator/scene-creator-cover.jpg",
+        label: "Scene Creator custom GPT cover",
+      },
+      {
+        src: "./assets/scene-creator/spirits-studio-lineup.png",
+        label: "Product scene direction with controlled light, props, and composition",
+      },
+      {
+        src: "./assets/scene-creator/wine-bottles-held.png",
+        label: "Character, product, and location continuity for generative workflows",
+      },
+      {
+        src: "./assets/scene-creator/wine-studio-lineup.png",
+        label: "Branded visual layout with palette, object roles, and negative space",
+      },
+      {
+        src: "./assets/scene-creator/joie-bottle-glass.png",
+        label: "Outdoor product angle built around action, lighting, and environment",
+      },
+      {
+        src: "./assets/scene-creator/picnic-basket-product-scene.png",
+        label: "Lifestyle product scene with moodboard-driven props and color control",
+      },
+      {
+        src: "./assets/scene-creator/cider-studio-lineup.png",
+        label: "Commercial beverage setup with copy-safe composition",
+      },
+      {
+        src: "./assets/scene-creator/wine-vineyard-hands.png",
+        label: "Cinematic continuation prompt direction for product-in-hand scenes",
       },
     ],
   },
