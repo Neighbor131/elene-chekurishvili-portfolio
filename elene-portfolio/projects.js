@@ -1,5 +1,229 @@
 const projects = [
   {
+    title: "From A/B Tests to a Scalable Design System: How a ±200% Conversion Lift Exposed the Need for Better UX Infrastructure",
+    cover: "./assets/company-a-design-system/company-a-design-system-cover.jpg",
+    href: "./work.html?project=company-a-design-system",
+    ratio: "2327 / 1382",
+    type: "CRO, UX optimization, and design system foundation",
+    year: "2025-2026",
+    focus: "CRO audits, UX optimization, A/B testing support, Flowbite reskinning, reusable components, AI-assisted component auditing, scalable design operations",
+    summary: "For NDA reasons, the client is referred to as Company A. The collaboration began with CRO and UX optimization, grew through high-impact A/B testing work, and eventually revealed the need for a practical design system foundation that could keep future improvements fast, consistent, and scalable.",
+    bodyMarkdown: `
+## Overview
+
+For NDA reasons, I’ll refer to the client as **Company A**.
+
+Company A had been working with us for over a year, initially approaching us from a **CRO and UX optimization perspective**. The goal was clear: audit key parts of the website, identify conversion blockers, improve the user experience, and validate design decisions through A/B testing.
+
+The collaboration started with focused improvements across high-impact areas such as:
+
+* Product Listing Pages
+* Product Detail Pages
+* Homepage sections
+* Standalone landing pages
+* Conversion-focused campaign areas
+
+Over time, these iterative improvements delivered significant results. The client’s conversion rate increased by **230% year-over-year**, and the relationship naturally grew into an ongoing stream of new improvement requests.
+
+But success created a new problem.
+
+As more areas of the website improved, the gap between the newly optimized experience and the older untouched parts of the site became harder to ignore. The website started to feel fragmented: part legacy interface, part improved UX layer, part newly designed experiment.
+
+At that point, continuing with surface-level updates would not only slow us down, but also create more inconsistency with every new request.
+
+The project had reached a threshold no one fully anticipated:
+
+**Before we could keep improving the website efficiently, we needed to consolidate the design foundation behind it.**
+
+---
+
+## The Challenge
+
+The website had evolved through many fast-paced, ad hoc updates. This allowed us to move quickly, test ideas, and respond to business needs, but it also meant that the design work had become scattered across files, frames, and one-off components.
+
+Some areas had already been redesigned and optimized. Others still reflected older visual patterns. Reusable elements were not always defined as components, and there was no single source of truth for how core UI patterns should look, behave, or be reused.
+
+This created several problems:
+
+1. **Inconsistent visual experience**
+   The website started to feel like a mix of old and new interface decisions.
+
+2. **Slower design and development cycles**
+   Every new improvement required additional manual work because patterns had to be recreated, adjusted, or interpreted again.
+
+3. **Harder A/B testing setup**
+   Without consistent reusable components, even small tests could become unnecessarily time-consuming.
+
+4. **Limited scalability**
+   The more we improved, the harder the system became to maintain.
+
+5. **Risk of design debt growing further**
+   Continuing with individual page-level improvements would only deepen the inconsistency.
+
+The challenge was not simply to create a “nice design system.” The real challenge was to create a practical, usable foundation that could support ongoing CRO work without slowing the project down.
+
+---
+
+## Why a Design System Became Necessary
+
+At first, the project did not begin as a design system initiative.
+
+The client needed audits, UX recommendations, CRO improvements, and A/B test designs. That type of work usually prioritizes speed, experimentation, and measurable impact.
+
+However, after a year of successful collaboration, it became clear that the website needed more than isolated improvements. The optimized areas were performing better, but they were also exposing the weaknesses of the older interface around them.
+
+This created an important strategic shift:
+
+**The next stage of optimization was no longer just about improving individual pages. It was about improving the system that allowed those pages to exist.**
+
+Without a consolidated design system, every future request would require more interpretation, more manual cleanup, and more design-development alignment.
+
+With a design system, each new improvement could become faster, more consistent, and easier to implement.
+
+---
+
+## The Approach
+
+Since the project team was very lean, only one designer and one developer, creating a full custom design system from scratch would have been too slow and unrealistic.
+
+Instead, we took a more practical approach.
+
+We used **Flowbite’s open-source design system** as a structural foundation and reskinned it using Company A’s brand colors, typography, and interface direction.
+
+This gave us a strong base to work from without wasting time reinventing common UI patterns from zero, because apparently humans enjoy rebuilding buttons every quarter as a form of professional suffering.
+
+From there, we focused on turning scattered design decisions into reusable, documented components.
+
+The work included:
+
+* Identifying repeated UI patterns across existing designs
+* Tracking components that had been created manually or inconsistently
+* Defining reusable components and their usage
+* Reskinning the color system based on the brand
+* Applying consistent typography rules
+* Creating a cleaner component structure
+* Updating existing design frames using the new system
+* Preparing the foundation for future A/B tests and page improvements
+
+---
+
+## Using AI as a Design System Assistant
+
+One of the most important parts of this project was how we used AI to speed up the process.
+
+Because the existing design files had grown through fast ad hoc updates, many frames and nodes were not properly defined as reusable components. Manually identifying every repeated pattern would have taken a significant amount of time.
+
+I used **Codex as my main assistant** to help with the repetitive and structural parts of the process.
+
+Codex helped us:
+
+* Identify missing reusable components
+* Track nodes that could be turned into components
+* Support the reskinning of the color system
+* Speed up the recreation of reusable components
+* Reduce manual cleanup work
+* Find patterns that could be consolidated
+* Support the transition from scattered frames to a structured component library
+
+This did not replace the design decision-making process. The role of AI was not to “design instead of me.” It helped with the heavy lifting: finding, organizing, comparing, and speeding up repetitive work.
+
+The design direction, component logic, usage decisions, and system structure still required human judgment.
+
+This distinction mattered because there was no room for hallucination or vague automation. The goal was not to generate random new UI. The goal was to systematize what already existed and make it reusable.
+
+---
+
+## Component Strategy
+
+One of the biggest questions we had to solve was how to update the existing design work.
+
+Should we simply swap old components with new library components?
+Would a surface-level component replacement be enough?
+Or did we need a more structured approach before touching the full design file?
+
+A direct library swap sounded efficient at first, but it carried risks. The existing designs were not built with a fully consistent component logic, so blindly replacing components could create broken layouts, mismatched sections, or inaccurate updates.
+
+Instead, we decided to work more carefully.
+
+First, we planned to go section by section and identify reusable sections across the website. These sections would become a consolidated gallery of patterns that could then be connected back to the new component library.
+
+This gave us a more controlled workflow:
+
+1. Identify reusable sections
+2. Define their component structure
+3. Connect them to the updated design system
+4. Replace or update old instances more safely
+5. Prepare reusable sections for future page improvements and tests
+
+This approach reduced the risk of AI misinterpreting the design file and made the process easier to maintain for both design and development.
+
+---
+
+## The Outcome
+
+The biggest result was speed.
+
+What could have easily taken weeks of manual design cleanup and component restructuring was compressed into roughly **10 hours of focused work**.
+
+In that time, we were able to create the foundation for a cleaner, more scalable design system that could support future CRO, UX, and A/B testing work.
+
+The outcome included:
+
+* A reskinned design system based on the client’s brand
+* A clearer reusable component structure
+* A stronger foundation for future experiments
+* Faster design updates
+* Easier collaboration between design and development
+* Reduced manual work for upcoming requests
+* A cleaner path toward updating older parts of the website
+* Better consistency across existing and future designs
+
+The design system also created a new opportunity for the client.
+
+Instead of only improving isolated pages, Company A can now start updating older areas of the website with a more unified visual and UX language. This means the website can gradually move toward a cleaner, more consistent experience without needing a full redesign all at once.
+
+---
+
+## Business Impact
+
+The project started with CRO improvements, but it evolved into something more strategic.
+
+The earlier optimization work had already contributed to a **230% year-over-year increase in conversion rate**. That success proved the value of improving the website experience.
+
+But the design system work helped protect that progress.
+
+By creating a stronger foundation, we made future improvements easier to design, easier to develop, and easier to test. Instead of treating each request as a separate one-off task, the team now has a reusable system that supports faster decision-making and cleaner execution.
+
+This is especially important for ongoing CRO work, where speed and consistency matter.
+
+A/B tests can now be prepared with less friction. Page updates can follow established patterns. New sections can be built from reusable components instead of starting from scratch.
+
+The client does not just get a cleaner UI. They get a system that makes future optimization more sustainable.
+
+---
+
+## Reflection
+
+This project was a reminder that successful CRO work can create its own next challenge.
+
+When individual improvements work, they often expose deeper structural issues. A page may perform better, but if the design foundation behind it remains fragmented, every future improvement becomes harder to maintain.
+
+For Company A, the need for a design system did not come from a branding exercise or a theoretical design process. It came from real business growth, repeated collaboration, and the practical need to keep improving without creating more design debt.
+
+The most valuable part of the project was not just creating components. It was creating a bridge between fast experimentation and long-term scalability.
+
+By combining an open-source design system foundation, brand-specific reskinning, careful component auditing, and AI-assisted workflow support, we turned a messy and time-consuming process into a structured system that can now support future growth.
+
+The result is a website foundation that is easier to improve, easier to maintain, and better prepared for whatever comes next.
+`,
+    images: [
+      {
+        src: "./assets/company-a-design-system/company-a-design-system-cover.jpg",
+        label: "From A/B tests to a scalable design system cover",
+      },
+    ],
+  },
+  {
     title: "CircuitMess Email Marketing",
     cover: "./assets/read-cv-media/circuitmess-email-marketing-alt-cover.jpg",
     href: "./work.html?project=circuitmess-email-marketing",
