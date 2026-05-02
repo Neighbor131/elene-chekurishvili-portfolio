@@ -60,8 +60,10 @@ The goal was to prove UX coherence across critical journeys, validate trust/safe
   {
     title: "From A/B Tests to a Scalable Design System: How a ±200% Conversion Lift Exposed the Need for Better UX Infrastructure",
     cover: "./assets/company-a-design-system/company-a-design-system-cover.jpg",
+    thumbnail: "./assets/company-a-design-system/company-a-design-system-thumbnail.svg",
     href: "./work.html?project=company-a-design-system",
     ratio: "2327 / 1382",
+    thumbnailRatio: "4 / 3",
     type: "CRO, UX optimization, and design system foundation",
     year: "2025-2026",
     focus: "CRO audits, UX optimization, A/B testing support, Flowbite reskinning, reusable components, AI-assisted component auditing, scalable design operations",
@@ -1133,13 +1135,15 @@ function createProjectCard(project, index) {
 
   const figure = document.createElement("figure");
   figure.className = "project-cover";
-  if (project.ratio) {
+  const thumbnail = project.thumbnail || project.cover;
+  const thumbnailRatio = project.thumbnailRatio || project.ratio;
+  if (thumbnailRatio) {
     figure.classList.add("has-ratio");
-    figure.style.setProperty("--cover-ratio", project.ratio);
+    figure.style.setProperty("--cover-ratio", thumbnailRatio);
   }
 
   const image = document.createElement("img");
-  PortfolioImages.apply(image, project.cover, {
+  PortfolioImages.apply(image, thumbnail, {
     width: card.classList.contains("is-slot-double") ? 1120 : 680,
     widths: card.classList.contains("is-slot-double") ? [680, 960, 1120, 1440] : [420, 560, 680, 920],
     sizes: card.classList.contains("is-slot-double")
