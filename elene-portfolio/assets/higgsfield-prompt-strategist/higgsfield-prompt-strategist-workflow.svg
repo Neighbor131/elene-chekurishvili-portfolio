@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Higgsfield Prompt Strategist workflow map</title>
+  <desc id="desc">A workflow diagram showing how the skill routes a user request from goal detection into prompt, workflow, anchor, or input problem solving.</desc>
+  <rect width="1600" height="1000" fill="#f8f5ef"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="90" y="116" font-size="42" font-weight="700" fill="#121216">Higgsfield Prompt Strategist workflow</text>
+    <text x="90" y="166" font-size="24" font-weight="600" fill="#666671">A practical routing layer before prompt writing</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="700">
+    <rect x="90" y="254" width="300" height="150" rx="24" fill="#111114"/>
+    <text x="132" y="322" font-size="24" fill="#ffffff">1. Output goal</text>
+    <text x="132" y="366" font-size="20" fill="#d7d7df">What are we making?</text>
+
+    <rect x="486" y="254" width="300" height="150" rx="24" fill="#ffffff"/>
+    <text x="528" y="322" font-size="24" fill="#111114">2. Modality</text>
+    <text x="528" y="366" font-size="20" fill="#666671">still / video / hybrid</text>
+
+    <rect x="882" y="254" width="300" height="150" rx="24" fill="#ffffff"/>
+    <text x="924" y="322" font-size="24" fill="#111114">3. Problem type</text>
+    <text x="924" y="366" font-size="20" fill="#666671">prompt / workflow / anchor</text>
+
+    <rect x="1278" y="254" width="230" height="150" rx="24" fill="#111114"/>
+    <text x="1320" y="322" font-size="24" fill="#ffffff">4. Output</text>
+    <text x="1320" y="366" font-size="20" fill="#d7d7df">prompt or plan</text>
+  </g>
+
+  <g fill="none" stroke="#111114" stroke-width="5" stroke-linecap="round">
+    <path d="M408 329h56"/>
+    <path d="M804 329h56"/>
+    <path d="M1200 329h56"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(90 540)">
+      <rect width="330" height="222" rx="24" fill="#ffe4ef"/>
+      <text x="34" y="56" font-size="24" font-weight="700" fill="#111114">Prompt quality</text>
+      <text x="34" y="104" font-size="21" font-weight="600" fill="#55515a">critique weak prompts</text>
+      <text x="34" y="144" font-size="21" font-weight="600" fill="#55515a">rewrite for clarity</text>
+      <text x="34" y="184" font-size="21" font-weight="600" fill="#55515a">generate variants</text>
+    </g>
+    <g transform="translate(454 540)">
+      <rect width="330" height="222" rx="24" fill="#dffaf5"/>
+      <text x="34" y="56" font-size="24" font-weight="700" fill="#111114">Workflow choice</text>
+      <text x="34" y="104" font-size="21" font-weight="600" fill="#55515a">Moodboards</text>
+      <text x="34" y="144" font-size="21" font-weight="600" fill="#55515a">Soul HEX / Angles</text>
+      <text x="34" y="184" font-size="21" font-weight="600" fill="#55515a">Recast / Click-to-Ad</text>
+    </g>
+    <g transform="translate(818 540)">
+      <rect width="330" height="222" rx="24" fill="#fff5bd"/>
+      <text x="34" y="56" font-size="24" font-weight="700" fill="#111114">Anchors</text>
+      <text x="34" y="104" font-size="21" font-weight="600" fill="#55515a">character continuity</text>
+      <text x="34" y="144" font-size="21" font-weight="600" fill="#55515a">location consistency</text>
+      <text x="34" y="184" font-size="21" font-weight="600" fill="#55515a">palette and camera logic</text>
+    </g>
+    <g transform="translate(1182 540)">
+      <rect width="326" height="222" rx="24" fill="#dfe6ff"/>
+      <text x="34" y="56" font-size="24" font-weight="700" fill="#111114">References</text>
+      <text x="34" y="104" font-size="21" font-weight="600" fill="#55515a">decode visual drivers</text>
+      <text x="34" y="144" font-size="21" font-weight="600" fill="#55515a">separate copy / avoid</text>
+      <text x="34" y="184" font-size="21" font-weight="600" fill="#55515a">reconstruct prompt logic</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" fill="#121216">
+    <text x="90" y="890" font-size="28" font-weight="700">Principle:</text>
+    <text x="230" y="890" font-size="28" font-weight="600">choose the controllable path before adding prettier words.</text>
+  </g>
+</svg>

@@ -67,32 +67,38 @@ function renderWorkPage(project) {
     },
   ];
 
-  media.replaceChildren(
-    ...imageSet.map((image) => {
-      const figure = document.createElement("figure");
-      figure.className = "work-shot";
-      if (project.ratio) {
-        figure.style.setProperty("--cover-ratio", project.ratio);
-      }
+  const mediaItems = imageSet.flatMap((image, index) => {
+    const figure = document.createElement("figure");
+    figure.className = "work-shot";
+    if (project.ratio) {
+      figure.style.setProperty("--cover-ratio", project.ratio);
+    }
 
-      const img = document.createElement("img");
-      PortfolioImages.apply(img, image.src, {
-        width: 1400,
-        widths: [720, 960, 1200, 1400, 1800],
-        sizes: "(min-width: 900px) 58vw, 100vw",
-        quality: 76,
-      });
-      img.alt = image.alt || `${project.title} ${image.label}`;
-      img.loading = "lazy";
-      img.decoding = "async";
+    const img = document.createElement("img");
+    PortfolioImages.apply(img, image.src, {
+      width: 1400,
+      widths: [720, 960, 1200, 1400, 1800],
+      sizes: "(min-width: 900px) 58vw, 100vw",
+      quality: 76,
+    });
+    img.alt = image.alt || `${project.title} ${image.label}`;
+    img.loading = "lazy";
+    img.decoding = "async";
 
-      const caption = document.createElement("figcaption");
-      caption.textContent = image.label;
+    const caption = document.createElement("figcaption");
+    caption.textContent = image.label;
 
-      figure.append(img, caption);
-      return figure;
-    }),
-  );
+    figure.append(img, caption);
+    if (index === 0 && project.siteExcerpt) {
+      return [figure, createSiteExcerpt(project.siteExcerpt)];
+    }
+
+    return [figure];
+  });
+
+  media.classList.toggle("has-scrollable-stack", (project.images?.length || 1) > 1);
+  media.replaceChildren(...mediaItems);
+  window.PortfolioReveal?.refresh();
 }
 
 function renderWorkLinks(container, links = []) {
@@ -233,6 +239,51 @@ function createInlineNodes(text) {
   }
 
   return nodes;
+}
+
+function createSiteExcerpt(excerpt) {
+  const article = document.createElement("article");
+  article.className = "work-site-excerpt";
+
+  if (excerpt.kicker) {
+    const kicker = document.createElement("p");
+    kicker.className = "work-site-excerpt-kicker";
+    kicker.textContent = excerpt.kicker;
+    article.append(kicker);
+  }
+
+  if (excerpt.title) {
+    const title = document.createElement("h2");
+    title.textContent = excerpt.title;
+    article.append(title);
+  }
+
+  if (excerpt.body) {
+    const body = document.createElement("p");
+    body.textContent = excerpt.body;
+    article.append(body);
+  }
+
+  if (excerpt.items?.length) {
+    const list = document.createElement("ul");
+    excerpt.items.forEach((item) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = item;
+      list.append(listItem);
+    });
+    article.append(list);
+  }
+
+  if (excerpt.url) {
+    const frame = document.createElement("iframe");
+    frame.className = "work-site-frame";
+    frame.src = excerpt.url;
+    frame.title = excerpt.title || "Project site excerpt";
+    frame.loading = "lazy";
+    article.append(frame);
+  }
+
+  return article;
 }
 
 if (workPage) {

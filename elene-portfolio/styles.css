@@ -23,6 +23,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   background: var(--paper);
@@ -189,7 +195,9 @@ h2 {
   display: block;
   max-width: 280px;
   min-width: 0;
-  transition: transform 400ms cubic-bezier(0.59, 0.02, 0.44, 1);
+  transition:
+    opacity 620ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .work-grid .project-card {
@@ -246,6 +254,43 @@ h2 {
   color: var(--muted);
 }
 
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition:
+    opacity 680ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+    transform 680ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.work-shot.reveal-on-scroll,
+.image-band.reveal-on-scroll,
+.article-cover.reveal-on-scroll,
+.portrait-row.reveal-on-scroll {
+  transform: translate3d(0, 34px, 0) scale(0.985);
+}
+
+.work-shot.reveal-on-scroll.is-revealed,
+.image-band.reveal-on-scroll.is-revealed,
+.article-cover.reveal-on-scroll.is-revealed,
+.portrait-row.reveal-on-scroll.is-revealed {
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll,
+  .reveal-on-scroll.is-revealed {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .work-page {
   display: grid;
   gap: 20px;
@@ -260,8 +305,6 @@ h2 {
   max-width: 690px;
   min-height: calc(100dvh - 220px);
   padding-right: min(8vw, 120px);
-  position: sticky;
-  top: 120px;
 }
 
 .work-kicker,
@@ -379,8 +422,25 @@ h2 {
 }
 
 .work-media {
+  align-self: start;
   display: grid;
   gap: 20px;
+}
+
+@media (min-width: 641px) {
+  .work-media {
+    position: sticky;
+    top: 0;
+  }
+
+  .work-media.has-scrollable-stack {
+    max-height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: 20px;
+    padding-right: 8px;
+    scrollbar-gutter: stable;
+  }
 }
 
 .work-shot {
@@ -410,6 +470,47 @@ h2 {
   font-weight: 600;
   line-height: 14px;
   margin-top: 8px;
+}
+
+.work-site-excerpt {
+  background: #f4f4f1;
+  color: var(--muted);
+  display: grid;
+  gap: 14px;
+  line-height: 1.45;
+  padding: 20px;
+}
+
+.work-site-excerpt-kicker {
+  color: var(--soft);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  margin: 0;
+}
+
+.work-site-excerpt h2 {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.work-site-excerpt p,
+.work-site-excerpt ul {
+  margin: 0;
+}
+
+.work-site-excerpt ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 18px;
+}
+
+.work-site-frame {
+  aspect-ratio: 16 / 10;
+  background: var(--paper);
+  border: 0;
+  width: 100%;
 }
 
 .article-page {
