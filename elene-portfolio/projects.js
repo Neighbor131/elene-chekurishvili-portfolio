@@ -1,5 +1,107 @@
 const projects = [
   {
+    title: "Higgsfield Prompt Strategist",
+    cover: "./assets/higgsfield-prompt-strategist/higgsfield-prompt-strategist-cover.jpg",
+    href: "./work.html?project=higgsfield-prompt-strategist",
+    ratio: "1625 / 2061",
+    type: "Codex skill and creative workflow strategist",
+    year: "2026",
+    focus: "Higgsfield workflow routing, prompt critique and rewriting, image-to-video prompting, reference decoding, Moodboards, Soul HEX, Angles, Recast, Click-to-Ad, and Audio decision support",
+    summary: "A Codex skill built to help users frame Higgsfield requests before they start prompting. It helps identify whether the real issue is prompt quality, workflow choice, weak anchors, unclear references, or a source asset problem, then turns the request into a cleaner creative path.",
+    bodyMarkdown: `
+## The Problem
+
+Most people do not fail at generative creative tools because they lack adjectives.
+
+They fail because the request is framed at the wrong level.
+
+A user may ask for a "better prompt" when the real problem is that the reference image is too broad. Or they may want a consistent character across outputs, but keep changing the scene, camera, wardrobe, and emotional tone in every prompt. Or they may ask for a cinematic video prompt when the actual task should start from a still image, then move into image-to-video, then recast or audio later.
+
+That is the gap this skill is designed around.
+
+Higgsfield Prompt Strategist treats prompting as a workflow design problem, not just a writing problem. It helps users slow down for one beat and ask: what are we trying to make, what needs to stay stable, and which Higgsfield workflow gives this the best chance of working?
+
+---
+
+## How We Frame It
+
+The skill begins from the output goal.
+
+Before it rewrites anything, it routes the request into a modality: still image, text-to-video, image-to-video, or multi-step workflow. That matters because each format needs different control language.
+
+A still image prompt needs subject, composition, lighting, camera distance, material behavior, and texture. A video prompt needs motion, camera behavior, scene progression, and a clear emotional beat. An image-to-video prompt should not redescribe everything already visible in the source frame. It should describe what changes over time.
+
+After modality, the skill identifies the actual problem type:
+
+* prompt problem: the wording is unclear, overloaded, or contradictory
+* workflow problem: the user needs a different Higgsfield feature or sequence
+* anchor problem: the character, brand, palette, location, or reference logic is unstable
+* input problem: the source image or product page is likely causing the failure
+
+This framing keeps the assistant from blindly polishing bad input. Sometimes the right answer is not a prettier prompt. Sometimes it is "use Moodboards first," "lock the palette with Soul HEX," "try Angles instead of regenerating," or "crop the reference before asking the model to learn from it."
+
+---
+
+## What The Skill Helps Users Do
+
+The skill supports several levels of help.
+
+It can explore a loose idea and turn it into two or three concrete visual directions. It can critique an existing prompt and point out what is weak, missing, or conflicting. It can rewrite a prompt into a cleaner production-ready version. It can generate controlled variations for A/B testing without losing the original visual goal.
+
+It is also built for reference decoding. When a user shares an image, the skill separates what the reference is really doing from what should not be copied. It looks at subject and scene, composition and camera, lighting behavior, palette, texture, realism level, emotional temperature, and the imperfection pattern that gives the image its feel.
+
+That matters because references are messy. A user may want the mood of a reference, not the exact composition. Or the color treatment, but not the subject. Or the camera angle, but not the wardrobe. The skill makes that distinction explicit before writing the final prompt.
+
+It can also decide when a multi-step workflow is safer than one giant prompt. For example:
+
+* build a character sheet first
+* create the scene image second
+* animate it through image-to-video
+* use Recast only after the scene is stable
+* add Audio once the visual direction works
+
+That sequence gives the user more control than trying to solve everything at once.
+
+---
+
+## Why This Matters
+
+Creative AI tools are becoming more powerful, but the control surface is also getting more complicated.
+
+Higgsfield includes workflows for images, cinematic video, angles, recast, moodboards, color control, ads, and audio. That is useful, but it also means users need help deciding which door to open first.
+
+Higgsfield Prompt Strategist gives users a thinking layer before execution. It helps them understand whether they are asking for the right output, using the right source material, and choosing the right workflow.
+
+The practical value is speed and consistency.
+
+Users spend less time repeatedly regenerating from vague prompts. They get clearer prompt structures. They understand when references should be cropped, when palette control matters, when character anchors need to be locked, and when the task should be broken into stages.
+
+The skill is especially useful for creators, designers, marketers, founders, and anyone trying to produce visual ideas that need to feel intentional rather than random.
+
+---
+
+## Reflection
+
+This skill came from a pattern I kept noticing while working with prompt-heavy creative tools: people often ask for better words when they actually need better structure.
+
+The best prompt is not always the longest one. It is the one that knows what it is trying to control.
+
+That is why Higgsfield Prompt Strategist is built around diagnosis first. It helps users decide whether they need a prompt, a workflow, an anchor, a reference strategy, or a better input asset.
+
+Good prompting is partly language, but it is also creative operations. This skill was built to make that hidden operational layer easier to see.
+`,
+    images: [
+      {
+        src: "./assets/higgsfield-prompt-strategist/higgsfield-prompt-strategist-cover.jpg",
+        label: "Higgsfield Prompt Strategist article cover",
+      },
+      {
+        src: "./assets/higgsfield-prompt-strategist/higgsfield-prompt-strategist-workflow.svg",
+        label: "Prompt strategy workflow map",
+      },
+    ],
+  },
+  {
     title: "Design System: Ubani",
     cover: "./assets/ubani-design-system/ubani-banner.jpg",
     href: "./work.html?project=ubani-design-system",
@@ -410,108 +512,6 @@ The result is a website foundation that is easier to improve, easier to maintain
       {
         src: "./assets/scene-creator/wine-vineyard-hands.png",
         label: "Cinematic continuation prompt direction for product-in-hand scenes",
-      },
-    ],
-  },
-  {
-    title: "Higgsfield Prompt Strategist",
-    cover: "./assets/higgsfield-prompt-strategist/higgsfield-prompt-strategist-cover.jpg",
-    href: "./work.html?project=higgsfield-prompt-strategist",
-    ratio: "1625 / 2061",
-    type: "Codex skill and creative workflow strategist",
-    year: "2026",
-    focus: "Higgsfield workflow routing, prompt critique and rewriting, image-to-video prompting, reference decoding, Moodboards, Soul HEX, Angles, Recast, Click-to-Ad, and Audio decision support",
-    summary: "A Codex skill built to help users frame Higgsfield requests before they start prompting. It helps identify whether the real issue is prompt quality, workflow choice, weak anchors, unclear references, or a source asset problem, then turns the request into a cleaner creative path.",
-    bodyMarkdown: `
-## The Problem
-
-Most people do not fail at generative creative tools because they lack adjectives.
-
-They fail because the request is framed at the wrong level.
-
-A user may ask for a "better prompt" when the real problem is that the reference image is too broad. Or they may want a consistent character across outputs, but keep changing the scene, camera, wardrobe, and emotional tone in every prompt. Or they may ask for a cinematic video prompt when the actual task should start from a still image, then move into image-to-video, then recast or audio later.
-
-That is the gap this skill is designed around.
-
-Higgsfield Prompt Strategist treats prompting as a workflow design problem, not just a writing problem. It helps users slow down for one beat and ask: what are we trying to make, what needs to stay stable, and which Higgsfield workflow gives this the best chance of working?
-
----
-
-## How We Frame It
-
-The skill begins from the output goal.
-
-Before it rewrites anything, it routes the request into a modality: still image, text-to-video, image-to-video, or multi-step workflow. That matters because each format needs different control language.
-
-A still image prompt needs subject, composition, lighting, camera distance, material behavior, and texture. A video prompt needs motion, camera behavior, scene progression, and a clear emotional beat. An image-to-video prompt should not redescribe everything already visible in the source frame. It should describe what changes over time.
-
-After modality, the skill identifies the actual problem type:
-
-* prompt problem: the wording is unclear, overloaded, or contradictory
-* workflow problem: the user needs a different Higgsfield feature or sequence
-* anchor problem: the character, brand, palette, location, or reference logic is unstable
-* input problem: the source image or product page is likely causing the failure
-
-This framing keeps the assistant from blindly polishing bad input. Sometimes the right answer is not a prettier prompt. Sometimes it is "use Moodboards first," "lock the palette with Soul HEX," "try Angles instead of regenerating," or "crop the reference before asking the model to learn from it."
-
----
-
-## What The Skill Helps Users Do
-
-The skill supports several levels of help.
-
-It can explore a loose idea and turn it into two or three concrete visual directions. It can critique an existing prompt and point out what is weak, missing, or conflicting. It can rewrite a prompt into a cleaner production-ready version. It can generate controlled variations for A/B testing without losing the original visual goal.
-
-It is also built for reference decoding. When a user shares an image, the skill separates what the reference is really doing from what should not be copied. It looks at subject and scene, composition and camera, lighting behavior, palette, texture, realism level, emotional temperature, and the imperfection pattern that gives the image its feel.
-
-That matters because references are messy. A user may want the mood of a reference, not the exact composition. Or the color treatment, but not the subject. Or the camera angle, but not the wardrobe. The skill makes that distinction explicit before writing the final prompt.
-
-It can also decide when a multi-step workflow is safer than one giant prompt. For example:
-
-* build a character sheet first
-* create the scene image second
-* animate it through image-to-video
-* use Recast only after the scene is stable
-* add Audio once the visual direction works
-
-That sequence gives the user more control than trying to solve everything at once.
-
----
-
-## Why This Matters
-
-Creative AI tools are becoming more powerful, but the control surface is also getting more complicated.
-
-Higgsfield includes workflows for images, cinematic video, angles, recast, moodboards, color control, ads, and audio. That is useful, but it also means users need help deciding which door to open first.
-
-Higgsfield Prompt Strategist gives users a thinking layer before execution. It helps them understand whether they are asking for the right output, using the right source material, and choosing the right workflow.
-
-The practical value is speed and consistency.
-
-Users spend less time repeatedly regenerating from vague prompts. They get clearer prompt structures. They understand when references should be cropped, when palette control matters, when character anchors need to be locked, and when the task should be broken into stages.
-
-The skill is especially useful for creators, designers, marketers, founders, and anyone trying to produce visual ideas that need to feel intentional rather than random.
-
----
-
-## Reflection
-
-This skill came from a pattern I kept noticing while working with prompt-heavy creative tools: people often ask for better words when they actually need better structure.
-
-The best prompt is not always the longest one. It is the one that knows what it is trying to control.
-
-That is why Higgsfield Prompt Strategist is built around diagnosis first. It helps users decide whether they need a prompt, a workflow, an anchor, a reference strategy, or a better input asset.
-
-Good prompting is partly language, but it is also creative operations. This skill was built to make that hidden operational layer easier to see.
-`,
-    images: [
-      {
-        src: "./assets/higgsfield-prompt-strategist/higgsfield-prompt-strategist-cover.jpg",
-        label: "Higgsfield Prompt Strategist article cover",
-      },
-      {
-        src: "./assets/higgsfield-prompt-strategist/higgsfield-prompt-strategist-workflow.svg",
-        label: "Prompt strategy workflow map",
       },
     ],
   },
