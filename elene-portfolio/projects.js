@@ -8,6 +8,12 @@ const projects = [
     year: "2026",
     focus: "Higgsfield workflow routing, prompt critique and rewriting, image-to-video prompting, reference decoding, Moodboards, Soul HEX, Angles, Recast, Click-to-Ad, and Audio decision support",
     summary: "A Codex skill built to help users frame Higgsfield requests before they start prompting. It helps identify whether the real issue is prompt quality, workflow choice, weak anchors, unclear references, or a source asset problem, then turns the request into a cleaner creative path.",
+    links: [
+      {
+        label: "Download skill on GitHub",
+        href: "https://github.com/Neighbor131/elene-chekurishvili-portfolio/blob/main/elene-portfolio/skills/higgsfield-prompt-strategist/SKILL.md",
+      },
+    ],
     bodyMarkdown: `
 ## The Problem
 
