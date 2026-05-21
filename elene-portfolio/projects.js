@@ -1,5 +1,185 @@
 const projects = [
   {
+    title: "AI Workflow Patterns: Designing Trustworthy Product Infrastructure for AI-Assisted Commerce",
+    cover: "./assets/ai-workflow-patterns/ai-workflow-patterns-cover.jpg",
+    href: "./work.html?project=ai-workflow-patterns",
+    ratio: "1715 / 2112",
+    type: "Self-initiated AI product systems case study",
+    year: "2026",
+    focus: "AI interaction patterns, product systems, human-in-the-loop review, evidence-led recommendations, confidence rules, audit trails, and design-to-engineering handoff",
+    summary: "A product systems case study exploring how AI-assisted commerce workflows can move beyond isolated chat features into reusable, explainable, and approval-aware product infrastructure.",
+    bodyMarkdown: `
+## Overview
+
+AI features are increasingly being added to product workflows, but many teams still design them as isolated interactions: a chatbot here, a suggestion card there, an AI magic action somewhere else.
+
+This creates a product problem. AI output is probabilistic, context-dependent, and sometimes incomplete. Users need to understand where the answer came from, how confident the system is, what risk is attached, and whether a human needs to approve the next step.
+
+This case study explores how a design system could support AI-assisted workflows as reusable product infrastructure, not one-off AI features.
+
+The output is an **AI Workflow Pattern Library** for a commerce operations platform. It includes reusable components for intent capture, process visibility, evidence, recommendations, human approval, task handoff, audit trails, and machine-readable specs.
+
+---
+
+## Problem
+
+Product teams want to use AI to help users move faster, but AI introduces new interaction risks.
+
+* The system may produce useful recommendations without enough evidence.
+* Users may not know which data the AI used.
+* Teams may automate actions that should require review.
+* Designers and engineers may document AI behavior inconsistently.
+* AI workflows may become fragmented across teams and products.
+
+The challenge was not to design one AI chat interface. The challenge was to design a reusable system for AI workflows that could answer what the user is asking the AI to do, which data and rules should be used, what evidence supports the output, how confident the system is, and when the next action requires human review.
+
+---
+
+## Product Context
+
+The prototype is framed around an imagined commerce operations platform used by merchandisers, content managers, localization teams, growth teams, and product designers.
+
+The core workflow: a commerce manager asks the system to find underperforming product pages in the German market and suggest improvements.
+
+The AI system reviews product performance, support signals, content rules, and design guidelines. It then produces a recommendation, shows supporting evidence, requires human review when appropriate, and turns approved work into a structured task.
+
+This context was useful because commerce workflows contain the exact conditions where AI needs strong product rules: business impact, localization risk, customer-facing content, multiple data sources, cross-functional handoff, and review requirements.
+
+---
+
+## Design Strategy
+
+The system is organized around one principle:
+
+**AI can generate possibilities. The product system controls trust, review, and action.**
+
+That principle shaped the library into six layers.
+
+* Intent capture: the user describes a goal in natural language, while the system makes scope visible before anything runs.
+* Process visibility: progress states show meaningful workflow steps only, such as checking data, detecting signals, comparing rules, and preparing recommendations.
+* Evidence and trust: recommendations connect to stats, trend signals, data tables, and source citations.
+* Human review and control: the system decides whether output can be suggested, drafted, approved, or blocked based on risk.
+* Handoff: approved recommendations become implementation-ready tasks with acceptance criteria and source evidence.
+* Machine-readable specs: each pattern includes structured metadata for designers, engineers, and AI-assisted tooling.
+
+---
+
+## Pattern Library
+
+The React prototype presents the system as a documentation-style pattern library. This was intentional: the work needed to feel like a real design system artifact, not a single polished product screen.
+
+The library includes:
+
+* AI Composer
+* Progress Tracker
+* Evidence Dashboard
+* Recommendation Card
+* Confidence Indicator
+* Approval Card
+* Task Draft
+* Audit Trail
+* Human-in-the-loop pattern
+* AI-to-handoff pattern
+* Machine-readable component specs
+
+The implementation uses existing AI UI primitives where they make sense, then layers product-specific rules on top. This makes the prototype credible as a product system: it uses real component infrastructure, but the design decisions are specific to trust, review, and enterprise AI workflows.
+
+---
+
+## Workflow Demo
+
+The workflow demo shows the system end to end.
+
+First, the user scopes the request by market, category, data range, and attached context. Then the system shows the meaningful work being performed without exposing unnecessary model internals.
+
+Next, the user reviews the signals that support the recommendation: key metrics, trend rows, affected pages, and source citations. The recommendation is not automatically applied. The user can approve, edit, reject, or ask why.
+
+Finally, approved output becomes a task draft with acceptance criteria and an audit trail.
+
+---
+
+## Key Design Decisions
+
+The prototype includes chat-like input, but the main experience is structured workflow UI. This makes the system more useful for enterprise teams because outputs become evidence, decisions, and tasks.
+
+The AI Composer shows market, category, data range, and attachments before the user runs the request. This reduces ambiguity and gives the user a chance to correct context.
+
+The Progress Tracker avoids fake AI thinking theater. Each step maps to a meaningful product action, such as reviewing market data or comparing against guidelines.
+
+The Evidence Dashboard is designed to prevent unsupported AI claims. Recommendations must point back to data, source signals, and confidence rules.
+
+Confidence is not only visual decoration. It changes what the system allows. Low confidence requires review. High confidence may still need approval if the action is customer-facing or irreversible.
+
+The Approval Card makes the user explicitly confirm sensitive actions. The system prepares work, but the user decides when risk is meaningful.
+
+---
+
+## Decision Framework
+
+The system uses five automation levels:
+
+1. Suggest only: AI can recommend an action, while the human decides whether to act.
+2. Draft with review: AI can generate editable output, while the human edits or approves.
+3. Apply with undo: AI can apply low-risk reversible changes, while the human monitors and reverses if needed.
+4. Approval required: AI can prepare a high-impact action, while the human explicitly approves.
+5. Block automation: AI refuses automatic execution, and the human completes the work manually.
+
+This framework helps teams decide which interaction pattern to use based on confidence, reversibility, risk, and customer impact.
+
+---
+
+## Outcome Hypothesis
+
+Because this is a self-initiated case study, the outcome is framed as a product hypothesis rather than measured business impact.
+
+If implemented in a real commerce platform, this system could help teams reduce duplicated AI interaction patterns, make AI-generated recommendations easier to trust, speed up design-to-engineering handoff, prevent high-risk automation from running without review, and turn conversational AI output into structured product work.
+
+The most important outcome is system-level clarity: AI is not treated as a separate feature surface. It becomes part of the product operating model.
+
+---
+
+## What This Demonstrates
+
+This project is meant to show product systems thinking, AI interaction design, design-engineering collaboration, structured component documentation, human-in-the-loop workflow design, practical prototyping with React, and the ability to turn ambiguous AI concepts into reusable product infrastructure.
+
+For a role focused on AI enablement, the strongest signal is not the visual UI alone. It is the way the work connects user intent, data, model output, trust, approval, and implementation handoff into one coherent system.
+`,
+    images: [
+      {
+        src: "./assets/ai-workflow-patterns/ai-workflow-patterns-cover.jpg",
+        label: "AI-ready product system cover",
+      },
+      {
+        src: "./assets/ai-workflow-patterns/overview-pattern-library.png",
+        label: "Overview of the AI Workflow Pattern Library",
+      },
+      {
+        src: "./assets/ai-workflow-patterns/ai-composer-component.png",
+        label: "AI Composer component",
+      },
+      {
+        src: "./assets/ai-workflow-patterns/evidence-dashboard-component.png",
+        label: "Evidence Dashboard component",
+      },
+      {
+        src: "./assets/ai-workflow-patterns/machine-readable-spec.png",
+        label: "Machine-readable component spec view",
+      },
+      {
+        src: "./assets/ai-workflow-patterns/workflow-demo-compose.png",
+        label: "Workflow demo: capture intent",
+      },
+      {
+        src: "./assets/ai-workflow-patterns/workflow-demo-process.png",
+        label: "Workflow demo: process visibility",
+      },
+      {
+        src: "./assets/ai-workflow-patterns/workflow-demo-evidence.png",
+        label: "Workflow demo: evidence review",
+      },
+    ],
+  },
+  {
     title: "Custom Skills in Figma Make: Turning Design Judgment Into Reusable Workflows",
     cover: "./assets/figma-make-custom-skills/figma-make-custom-skills-cover.jpg",
     href: "./work.html?project=figma-make-custom-skills",
