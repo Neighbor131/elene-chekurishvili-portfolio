@@ -8,6 +8,12 @@ const projects = [
     year: "2026",
     focus: "AI interaction patterns, product systems, human-in-the-loop review, evidence-led recommendations, confidence rules, audit trails, and design-to-engineering handoff",
     summary: "A product systems case study exploring how AI-assisted commerce workflows can move beyond isolated chat features into reusable, explainable, and approval-aware product infrastructure.",
+    links: [
+      {
+        label: "Open interactive demo",
+        href: "https://ai-workflow-patterns-gallery-elene.netlify.app/",
+      },
+    ],
     bodyMarkdown: `
 ## Overview
 
@@ -88,7 +94,7 @@ The implementation uses existing AI UI primitives where they make sense, then la
 
 ## Workflow Demo
 
-The workflow demo shows the system end to end.
+The workflow demo shows the system end to end. Readers can open the interactive demo from the link above and explore the pattern library directly.
 
 First, the user scopes the request by market, category, data range, and attached context. Then the system shows the meaningful work being performed without exposing unnecessary model internals.
 
