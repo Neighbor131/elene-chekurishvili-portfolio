@@ -1,5 +1,143 @@
 const projects = [
   {
+    title: "Custom Skills in Figma Make: Turning Design Judgment Into Reusable Workflows",
+    cover: "./assets/figma-make-custom-skills/figma-make-custom-skills-cover.jpg",
+    href: "./work.html?project=figma-make-custom-skills",
+    ratio: "1715 / 1143",
+    type: "Figma Make custom skill workflow bundle",
+    year: "2026",
+    focus: "Reusable AI design workflows, design system reviews, UX critique, accessibility auditing, PRD-to-prototype planning, component state coverage, and engineering handoff checks",
+    summary: "A reusable Figma Make custom skills bundle for UI and UX designers who want to turn repeated design judgment into structured workflows instead of rewriting the same long prompts from scratch.",
+    links: [
+      {
+        label: "Download on Ko-fi",
+        href: "https://ko-fi.com/s/c90c4e3b15",
+      },
+    ],
+    bodyMarkdown: `
+## Overview
+
+AI design tools are moving beyond one-off prompting.
+
+That shift matters.
+
+For a while, working with AI in design has mostly meant writing prompts from scratch: describe the screen, explain the style, remind the model about the design system, ask it to check accessibility, then repeat the same instructions again in the next session.
+
+Figma Make's custom skills point toward a different way of working. Instead of treating every prompt as a fresh conversation, designers can package repeatable workflows into reusable instructions. A skill can be invoked when needed, almost like a slash command for a specific design task.
+
+That makes custom skills especially interesting for UI and UX designers.
+
+---
+
+## What Custom Skills Are
+
+In Figma Make, a custom skill is a reusable Markdown-based instruction file. It tells the AI agent how to perform a specific workflow, such as reviewing a UI against design system rules, checking a flow for usability issues, or turning a product brief into a prototype plan.
+
+The important part is not the file format. The important part is the behavior it enables.
+
+A skill lets a designer say, "Follow this process every time." Instead of rewriting a long prompt for a design critique or accessibility pass, the designer can invoke a skill like:
+
+* /design-system-review
+* /ux-flow-critique
+* /accessibility-audit
+* /prd-to-prototype
+* /component-state-matrix
+* /handoff-ready-check
+
+Each one represents a repeatable design workflow.
+
+---
+
+## Why This Matters For Designers
+
+Design work is full of repeated judgment.
+
+A UI designer often checks the same things again and again: spacing, typography, color roles, component consistency, interaction states, responsive behavior, and visual hierarchy.
+
+A UX designer does the same with flows: does the user understand what is happening, can they recover from errors, is the next step clear, are edge cases handled, does the copy reduce anxiety, is there a dead end?
+
+These are not random tasks. They are rituals of quality.
+
+Custom skills make those rituals reusable.
+
+This is useful because AI-generated interfaces often look finished before they are actually finished. A screen can appear polished while still missing empty states, keyboard focus behavior, error recovery, accessible labels, mobile constraints, or engineering handoff details.
+
+Skills can help designers catch those gaps earlier.
+
+---
+
+## The Most Useful Skills For UI And UX Work
+
+The most valuable custom skills are not necessarily the ones that generate more screens. They are the ones that improve decision quality.
+
+A /design-system-review skill can check whether a UI follows product standards: spacing, type scale, button hierarchy, component reuse, icon style, color semantics, and interaction states.
+
+A /ux-flow-critique skill can inspect a journey for friction: unclear steps, missing feedback, weak recovery paths, confusing labels, or too many decisions at once.
+
+An /accessibility-audit skill can review contrast, focus order, labels, touch targets, error messaging, and motion risks.
+
+A /prd-to-prototype skill can translate a product requirements document into screens, flows, states, and acceptance criteria.
+
+A /component-state-matrix skill can make sure a component has the variants it needs before it becomes part of a larger system.
+
+A /handoff-ready-check skill can ask the practical question teams often leave too late: is this prototype actually ready for engineering?
+
+Together, these skills form something like a lightweight design operations layer.
+
+---
+
+## From Prompting To Design Operations
+
+The bigger opportunity is not just personal productivity. It is team consistency.
+
+Every design team has a way of thinking. Some of that thinking is explicit: design system documentation, accessibility standards, brand guidelines, product principles. Some of it is implicit: how the team critiques work, what it considers polished, how much density is appropriate, what edge cases matter, what good handoff looks like.
+
+Custom skills give teams a way to package some of that thinking.
+
+They do not replace design judgment. They make design judgment easier to repeat.
+
+That distinction is important. A skill should not be treated as a final authority. It should act more like a structured reviewer: consistent, patient, and useful at catching things that humans may overlook when moving quickly.
+
+---
+
+## A Practical Limitation
+
+Custom skills still need human review.
+
+The AI may interpret instructions differently from one run to another, and Figma Make currently has practical limits around how skills are invoked and shared. Skills are most useful when they are specific, focused, and paired with clear context.
+
+The best skills do not say "make this better." They say:
+
+* Check this UI against our design system.
+* Find missing states in this component.
+* Review this flow for user confusion.
+* Turn this PRD into screens and acceptance criteria.
+* Identify what engineering would need before handoff.
+
+Specific workflows produce better results.
+
+---
+
+## Closing Thought
+
+For designers, the most interesting use of AI may not be asking it to generate a screen.
+
+It may be teaching it how we review, refine, and think.
+
+Figma Make custom skills are a small but meaningful step in that direction: from one-off prompts to reusable design workflows.
+`,
+    images: [
+      {
+        src: "./assets/figma-make-custom-skills/figma-make-custom-skills-cover.jpg",
+        label: "Custom Skills in Figma Make cover",
+      },
+      {
+        src: "./assets/figma-make-custom-skills/figma-make-custom-skills-manager.png",
+        label: "Figma Make custom skills manager",
+      },
+    ],
+  },
+  {
     title: "Higgsfield Prompt Strategist",
     cover: "./assets/higgsfield-prompt-strategist/higgsfield-prompt-strategist-cover.jpg",
     href: "./work.html?project=higgsfield-prompt-strategist",
